@@ -3,7 +3,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route('/match', methods=['POST'])
+@app.route('/', methods=['POST'])
 def match():
   # Parse the list of companies and preferences from the request
   companies = request.form['companies'].split(',')
